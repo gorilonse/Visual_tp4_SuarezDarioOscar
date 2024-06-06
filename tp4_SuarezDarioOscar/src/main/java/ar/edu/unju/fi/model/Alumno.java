@@ -3,6 +3,9 @@ package ar.edu.unju.fi.model;
 import java.time.LocalDate;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alumno {
 
 	
@@ -18,10 +21,38 @@ public class Alumno {
 	private String LU;
 	
 	
+	
+	
+	
+	
+	
+	public Alumno() {
+		super();
+	}
+	public Alumno(String dni, String nombre, String apellido, String email, String telefono, LocalDate fechaNacimineto,
+			String domicilio, String lU) {
+		super();
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.telefono = telefono;
+		this.fechaNacimineto = fechaNacimineto;
+		this.domicilio = domicilio;
+		LU = lU;
+	}
+	//TOSTRING
+	@Override
+	public String toString() {
+		return "Alumno [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email
+				+ ", telefono=" + telefono + ", fechaNacimineto=" + fechaNacimineto + ", domicilio=" + domicilio
+				+ ", LU=" + LU + "]";
+	}
 	//GETTER Y SETTER
 	public String getDni() {
 		return dni;
 	}
+	
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
