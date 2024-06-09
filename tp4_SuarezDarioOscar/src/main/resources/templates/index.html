@@ -9,35 +9,8 @@
 
 </head>
 <body class="container">
-<div class="row pt-3 pb-3">
-	<div class="row " id="headerMain"> 
-		    <header class="col-3 ">
-		     	<img class="d-block w-100 img-fluid" alt="sigo 21"  src="/images/logo-siglo21.avif">
-		    </header>
-			<nav class="col-9 navbar navbar-expand-lg bg-body-tertiary" >
-			  <div class="container-fluid">
-			    <div class="collapse navbar-collapse" id="navbarNav">
-			      <ul class="navbar-nav">
-			        <li class="nav-item">
-			          <a class="nav-link" aria-current="page" href="#">Inicio</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Acerca de </a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Carreras</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Noticias</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Contacto</a>
-			        </li>
-			      </ul>
-			    </div>
-			  </div>
-			</nav>
-	</div>
+<div data-th-replace="~{/layouts/header::header}">
+
 </div>
 
 <div class="row ">
@@ -162,44 +135,6 @@
   </div>
 </div>
 
-<footer>
-	<div class="container-fluid">
-		<div class="row p-5 bg-secondary text-white">
-			<div class="col-3">
-				<p class="h4">Autor</p>
-				<p class="h4"> Suarez, Dario Oscar</p>
-			</div>
-			<div class="col-3">
-			    <p class="h5">Direccion</p>
-				<p class="h6">AV 19 de Abril, 1550.</p>
-				<div>
-			     	<a class="text-decoration-none text-white" href="#">Terminos y condiciones</a>
-			    </div>
-			    <div>
-			     	<a class="text-decoration-none text-white" href="#">Politicas de Privacidad</a>
-			    </div>
-			</div>
-			<div class="col-3">
-			    <p class="h5">Cursos </p>
-				<div><a class="text-decoration-none text-white" href="#">Java</a></div>
-				<div><a class="text-decoration-none text-white" href="#">HTML</a></div>
-				<div><a class="text-decoration-none text-white" href="#">Boottrap</a></div>	
-			</div>
-			<div class="col-3">
-			    <div>
-			    	<p class="h5">Contacto</p>
-				    <a class="text-decoration-none text-white" href="#">alumnos@hotmail.com</a>
-			    </div>
-				<div> 
-					<p class="h5">Redes</p>
-					<a class="text-decoration-none text-white" href="www.facebook.com">Facebook</a>
-					<a class="text-decoration-none text-white" href="www.linkedin.com">Linkedin</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="pie de pagina"></script>
-    <script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</footer>
+<footer data-th-replace="~{/layouts/footer::footer}"></footer>
 </body>
 </html>

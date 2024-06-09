@@ -1,14 +1,39 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.stereotype.Component;
+
 public class Docente {
 	//ATRIBUTO
 	private String legajo;
 	private String nombre;
-	private String epellido;
+	private String apellido;
 	private String email;
 	private String telefono;
 	
+	public Docente() {
+		// TODO Auto-generated constructor stub
+	}
 	
+		
+	public Docente(String legajo, String nombre, String apellido, String email, String telefono) {
+		super();
+		this.legajo = legajo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.telefono = telefono;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Docente [legajo=" + legajo + ", nombre=" + nombre + ", epellido=" + apellido + ", email=" + email
+				+ ", telefono=" + telefono + "]";
+	}
+
+
 	
 	//GETTER Y SETTER 
 	public String getLegajo() {
@@ -24,10 +49,10 @@ public class Docente {
 		this.nombre = nombre;
 	}
 	public String getEpellido() {
-		return epellido;
+		return apellido;
 	}
 	public void setEpellido(String epellido) {
-		this.epellido = epellido;
+		this.apellido = epellido;
 	}
 	public String getEmail() {
 		return email;
