@@ -1,8 +1,8 @@
 package ar.edu.unju.fi.collections;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.compare.ObjectToStringComparator;
 
 import ar.edu.unju.fi.model.Alumno;
 
@@ -47,7 +47,7 @@ public class AlumnoCollections {
 	}
 	
 	public static void eliminarObjeto(String buscado) {
-			for (int i=0; i<listaAlumnos.size();i++) {
+		for (int i=0; i<listaAlumnos.size();i++) {
 			if(buscado.equals(listaAlumnos.get(i).getDni())) {
 				listaAlumnos.remove(i);
 			}

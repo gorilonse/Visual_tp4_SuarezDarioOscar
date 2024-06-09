@@ -1,5 +1,6 @@
 package ar.edu.unju.fi.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -11,7 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 import ar.edu.unju.fi.collections.AlumnoCollections;
 import ar.edu.unju.fi.model.Alumno;
 
+
 @Controller
+@RequestMapping("/alumno")
 public class AlumnoController {
 
 	@GetMapping("/nuevo")
@@ -59,4 +62,5 @@ public class AlumnoController {
 		AlumnoCollections.modificarObjeto(alumno, alumno.getDni());
 		return mov;
 	}
+	
 }

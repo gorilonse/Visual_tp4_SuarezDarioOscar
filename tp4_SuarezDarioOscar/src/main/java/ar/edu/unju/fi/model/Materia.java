@@ -1,9 +1,10 @@
 package ar.edu.unju.fi.model;
 
-import org.attoparser.trace.MarkupTraceEvent.DocumentEndTraceEvent;
 import org.springframework.stereotype.Component;
+
 import ar.edu.unju.fi.numerado.Modalidad;
 
+@Component
 public class Materia {
 
 	//ATRIBUTOS
@@ -14,7 +15,6 @@ public class Materia {
 	private Modalidad modalidadDeHoraString;  //ENUMERADO
 	private Docente docente; //del tipo Docente
 	private Carrera carrera; //del tipo Carrera
-	
 	
 	public Materia() {
 		// TODO Auto-generated constructor stub

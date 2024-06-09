@@ -2,6 +2,7 @@ package ar.edu.unju.fi.model;
 
 import org.springframework.stereotype.Component;
 
+@Component
 public class Carrera {
 
 	//ATRIBUTOS
@@ -9,7 +10,6 @@ public class Carrera {
 	private String nombre;
 	private String cantidadDeAnios;
 	private boolean estado;
-	
 	
 	public Carrera() {
 		// TODO Auto-generated constructor stub
@@ -35,9 +35,9 @@ public class Carrera {
 				+ estado + "]";
 	}
 
-	
-	
-	
+
+
+
 	//GETTER Y SETTER
 	public String getCodigo() {
 		return codigo;

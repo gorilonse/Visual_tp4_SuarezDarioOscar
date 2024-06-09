@@ -2,6 +2,7 @@ package ar.edu.unju.fi.model;
 
 import org.springframework.stereotype.Component;
 
+@Component
 public class Docente {
 	//ATRIBUTO
 	private String legajo;
@@ -34,7 +35,6 @@ public class Docente {
 	}
 
 
-	
 	//GETTER Y SETTER 
 	public String getLegajo() {
 		return legajo;
@@ -48,10 +48,10 @@ public class Docente {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getEpellido() {
+	public String getApellido() {
 		return apellido;
 	}
-	public void setEpellido(String epellido) {
+	public void setApellido(String epellido) {
 		this.apellido = epellido;
 	}
 	public String getEmail() {
