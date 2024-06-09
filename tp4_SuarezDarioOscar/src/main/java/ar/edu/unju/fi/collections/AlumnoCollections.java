@@ -1,5 +1,4 @@
 package ar.edu.unju.fi.collections;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,8 +47,7 @@ public class AlumnoCollections {
 	}
 	
 	public static void eliminarObjeto(String buscado) {
-		Alumno encontrado= new Alumno();
-		for (int i=0; i<listaAlumnos.size();i++) {
+			for (int i=0; i<listaAlumnos.size();i++) {
 			if(buscado.equals(listaAlumnos.get(i).getDni())) {
 				listaAlumnos.remove(i);
 			}

@@ -1,7 +1,7 @@
 package ar.edu.unju.fi.model;
 
+
 import java.time.LocalDate;
-import java.util.Date;
 
 import org.springframework.stereotype.Component;
 
